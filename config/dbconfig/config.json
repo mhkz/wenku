@@ -1,9 +1,0 @@
-{
-  "admin": {
-    "userName": "root",
-    "password": "123456",
-    "path": "127.0.0.1:3306",
-    "dbname": "testabc",
-    "config": "charset=utf8&parseTime=True&loc=Local"
-  }
-}

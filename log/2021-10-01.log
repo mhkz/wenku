@@ -1,0 +1,20 @@
+[wenku]2021/10/01 - 10:22:04.867	[34minfo[0m	/Users/guofeng/Documents/release/wenku/initialize/router.go:31	use middleware logger
+[wenku]2021/10/01 - 10:22:04.868	[34minfo[0m	/Users/guofeng/Documents/release/wenku/initialize/router.go:34	use middleware cors
+[wenku]2021/10/01 - 10:22:04.868	[34minfo[0m	/Users/guofeng/Documents/release/wenku/initialize/router.go:36	register swagger handler
+[wenku]2021/10/01 - 10:22:04.871	[34minfo[0m	/Users/guofeng/Documents/release/wenku/initialize/router.go:73	router register success
+[wenku]2021/10/01 - 10:22:04.871	[34minfo[0m	/Users/guofeng/Documents/release/wenku/core/server.go:30	server run success on 	{"address": ":8888"}
+[wenku]2021/10/01 - 10:22:08.650	[31merror[0m	/Users/guofeng/Documents/release/wenku/core/server.go:40	accept tcp [::]:8888: use of closed network connection
+[wenku]2021/10/01 - 10:27:57.050	[34minfo[0m	/Users/guofeng/Documents/release/wenku/initialize/gorm.go:62	register table success
+[wenku]2021/10/01 - 10:27:57.051	[34minfo[0m	/Users/guofeng/Documents/release/wenku/initialize/router.go:31	use middleware logger
+[wenku]2021/10/01 - 10:27:57.051	[34minfo[0m	/Users/guofeng/Documents/release/wenku/initialize/router.go:34	use middleware cors
+[wenku]2021/10/01 - 10:27:57.051	[34minfo[0m	/Users/guofeng/Documents/release/wenku/initialize/router.go:36	register swagger handler
+[wenku]2021/10/01 - 10:27:57.055	[34minfo[0m	/Users/guofeng/Documents/release/wenku/initialize/router.go:73	router register success
+[wenku]2021/10/01 - 10:27:57.056	[34minfo[0m	/Users/guofeng/Documents/release/wenku/core/server.go:30	server run success on 	{"address": ":8888"}
+[wenku]2021/10/01 - 10:50:39.565	[31merror[0m	/Users/guofeng/Documents/release/wenku/core/server.go:40	accept tcp [::]:8888: use of closed network connection
+[wenku]2021/10/01 - 10:50:50.438	[34minfo[0m	/Users/guofeng/Documents/release/wenku/initialize/gorm.go:62	register table success
+[wenku]2021/10/01 - 10:50:50.438	[34minfo[0m	/Users/guofeng/Documents/release/wenku/initialize/router.go:31	use middleware logger
+[wenku]2021/10/01 - 10:50:50.438	[34minfo[0m	/Users/guofeng/Documents/release/wenku/initialize/router.go:34	use middleware cors
+[wenku]2021/10/01 - 10:50:50.438	[34minfo[0m	/Users/guofeng/Documents/release/wenku/initialize/router.go:36	register swagger handler
+[wenku]2021/10/01 - 10:50:50.441	[34minfo[0m	/Users/guofeng/Documents/release/wenku/initialize/router.go:73	router register success
+[wenku]2021/10/01 - 10:50:50.441	[34minfo[0m	/Users/guofeng/Documents/release/wenku/core/server.go:30	server run success on 	{"address": ":8888"}
+[wenku]2021/10/01 - 10:50:55.965	[31merror[0m	/Users/guofeng/Documents/release/wenku/core/server.go:36	accept tcp [::]:8888: use of closed network connection

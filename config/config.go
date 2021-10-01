@@ -1,38 +1,22 @@
 package config
 
-import (
-	"fmt"
-	"github.com/fsnotify/fsnotify"
-	"github.com/spf13/viper"
-)
-
-type Config struct {
-	Admin Admin
-}
-type Admin struct {
-	UserName string
-	Password string
-	Path     string
-	Dbname   string
-	Config   string
-}
-
-var Dbconfig Config
-
-func init() {
-	v := viper.New()
-	v.SetConfigName("config")             //  设置配置文件名 (不带后缀)
-	v.AddConfigPath("./config/dbconfig/") // 第一个搜索路径
-	v.SetConfigType("json")
-	err := v.ReadInConfig() // 搜索路径，并读取配置数据
-	if err != nil {
-		panic(fmt.Errorf("Fatal error config file: %s \n", err))
-	}
-	v.WatchConfig()
-	v.OnConfigChange(func(e fsnotify.Event) {
-		fmt.Println("Config file changed:", e.Name)
-	})
-	if err := v.Unmarshal(&Dbconfig); err != nil {
-		fmt.Println(err)
-	}
+type Server struct {
+	JWT     JWT     `mapstructure:"jwt" json:"jwt" yaml:"jwt"`
+	Zap     Zap     `mapstructure:"zap" json:"zap" yaml:"zap"`
+	Redis   Redis   `mapstructure:"redis" json:"redis" yaml:"redis"`
+	Email   Email   `mapstructure:"email" json:"email" yaml:"email"`
+	Casbin  Casbin  `mapstructure:"casbin" json:"casbin" yaml:"casbin"`
+	System  System  `mapstructure:"system" json:"system" yaml:"system"`
+	Captcha Captcha `mapstructure:"captcha" json:"captcha" yaml:"captcha"`
+	// auto
+	AutoCode Autocode `mapstructure:"autoCode" json:"autoCode" yaml:"autoCode"`
+	// gorm
+	Mysql Mysql `mapstructure:"mysql" json:"mysql" yaml:"mysql"`
+	// oss
+	Local      Local      `mapstructure:"local" json:"local" yaml:"local"`
+	Qiniu      Qiniu      `mapstructure:"qiniu" json:"qiniu" yaml:"qiniu"`
+	AliyunOSS  AliyunOSS  `mapstructure:"aliyun-oss" json:"aliyunOSS" yaml:"aliyun-oss"`
+	TencentCOS TencentCOS `mapstructure:"tencent-cos" json:"tencentCOS" yaml:"tencent-cos"`
+	Excel      Excel      `mapstructure:"excel" json:"excel" yaml:"excel"`
+	Timer      Timer      `mapstructure:"timer" json:"timer" yaml:"timer"`
 }
